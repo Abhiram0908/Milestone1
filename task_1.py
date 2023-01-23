@@ -45,4 +45,17 @@ for i in lista:
     print(i, file=f1)
 
 f.close()
+f = open("Format_Source.txt", "r")
+
+
+lines = f.readlines()
+lst=[]
+for k in lines:
+    if 'xy' in k:
+        lst = k.split()
+        print(lst)        
+        
+
+
+f.close()
 f1.close()
